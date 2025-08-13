@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-neutral: hsl(var(--neutral));
+  --color-neutral-foreground: hsl(var(--neutral-foreground));
+}
+
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 0 0% 10%;
+
+    --primary: 0 85% 40%;             /* deep red */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 25 95% 50%;          /* bright orange */
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 210 60% 40%;            /* steel blue */
+    --accent-foreground: 0 0% 100%;
+
+    --neutral: 0 0% 20%;              /* charcoal gray */
+    --neutral-foreground: 0 0% 98%;
+  }
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  body {
+    @apply bg-background text-foreground transition-colors duration-300 antialiased;
+  }
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+
+  @media (width >= 640px) {
+    max-width: 640px;
+  }
+  @media (width >= 768px) {
+    max-width: 768px;
+  }
+  @media (width >= 1024px) {
+    max-width: 1024px;
+  }
+  @media (width >= 1280px) {
+    max-width: 1280px;
+  }
+  @media (width >= 1400px) {
+    max-width: 1400px;
+  }
+}
+
+@utility btn-primary {
+  @apply inline-flex items-center justify-center rounded-lg px-4 py-2
+         bg-primary text-primary-foreground font-semibold
+         transition-all duration-200 hover:opacity-90 active:scale-[.98];
+}
+
+@utility btn-secondary {
+  @apply inline-flex items-center justify-center rounded-lg px-4 py-2
+         bg-secondary text-secondary-foreground font-semibold
+         transition-all duration-200 hover:opacity-90 active:scale-[.98];
+}
+
+@utility btn-accent {
+  @apply inline-flex items-center justify-center rounded-lg px-4 py-2
+         bg-accent text-accent-foreground font-semibold
+         transition-all duration-200 hover:opacity-90 active:scale-[.98];
+}
+
+@utility text-glow {
+  @apply relative;
+  text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+}
+
+@utility fade-up {
+  animation: var(--animate-fade-up);
+}
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
