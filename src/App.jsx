@@ -1,6 +1,8 @@
 import { BrowserRouter } from "react-router-dom"
 import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound"
+import { Routes, Route } from "react-router-dom";
+import { TDEEPage } from "./pages/TDEEPage";
 
 function App() {
 
@@ -9,8 +11,9 @@ function App() {
     <>
      <BrowserRouter>
       <Routes>
-          <Route index element={<Home />} />
-          <Route path="*"/>
+          <Route path="/" element={<Home />} />
+          <Route path="/tdee" element={<TDEEPage />} />
+          <Route path="*" element={<NotFound />}/>
       </Routes>
      </BrowserRouter>
     </>

@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+  --color-border: hsl(var(--border));
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
 
@@ -12,6 +13,9 @@
 
   --color-accent: hsl(var(--accent));
   --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-accent2: hsl(var(--accent2));
+  --color-accent2-foreground: hsl(var(--accent2-foreground));
 
   --color-neutral: hsl(var(--neutral));
   --color-neutral-foreground: hsl(var(--neutral-foreground));
@@ -31,6 +35,9 @@
 
     --accent: 210 60% 40%;            /* steel blue */
     --accent-foreground: 0 0% 100%;
+
+    --accent2: 210 70% 60%; /* lighter, brighter blue */
+    --accent-foreground2: 0 0% 100%;
 
     --neutral: 0 0% 20%;              /* charcoal gray */
     --neutral-foreground: 0 0% 98%;
@@ -71,6 +78,16 @@
   }
   @media (width >= 1400px) {
     max-width: 1400px;
+  }
+}
+
+@layer utilities {
+  .bg-dumbbells {
+    background-image: url('/dumbbell.svg');
+    background-repeat: repeat;
+    background-size: 40px 40px;
+    background-position: center;
+    opacity: 0.1; /* faint pattern */
   }
 }
 
