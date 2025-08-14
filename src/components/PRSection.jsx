@@ -40,7 +40,7 @@ export const PRSection = () => {
                         </ul>
                     </div>
                     {/* Calculator */}
-                    <div className="bg-card p-8 rounded-lg shadow-xs">
+                    <div className="bg-white p-6 rounded-2xl shadow-lg border mb-0">
                         <h3 className="text-xl font-bold mb-4 text-center"> Calculate Your PR!</h3>
 
                         <form className="space-y-6" onSubmit={handleSubmit}>
