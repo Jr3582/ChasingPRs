@@ -1,5 +1,5 @@
 import { PRSection } from "../components/PRSection"
-import { Navbar } from "../components/NavBar"
+import { Navbar } from "../components/Navbar"
 import { Footer } from "../components/Footer"
 import { MainBackground } from "../components/MainBackground"
 
