@@ -33,7 +33,7 @@ export const PRSection = () => {
                         </h3>
 
                         <ul className="list-disc list-outside pl-3 space-y-2 text-gray-800">
-                            <li className="text-xl">These calculations are meant to help gaduge your current strengths relative to your rep range maxes</li>
+                            <li className="text-xl">These calculations are meant to help gauge your current strengths relative to your rep range maxes</li>
                             <li className="text-xl">Consider these calculations with a grain of salt, as actual results may vary based on individual factors</li>
                             <li className="text-xl">I am not responsible for any unforseen injuries or potential damages as a result of using this calculator</li>
                             <li className="text-xl">Also, please note this PR calculation is primarily for the <span className="text-primary">Squat</span>, <span className="text-primary">Bench</span>, and <span className="text-primary">Deadlift</span></li>
