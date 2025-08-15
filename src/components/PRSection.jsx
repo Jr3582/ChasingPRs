@@ -69,7 +69,7 @@ export const PRSection = () => {
                                 className="block text-lg font-semibold font-medium mb-2"
                                 >
                                 {" "}
-                                Type:
+                                Unit:
                                 </label>
                                 <input 
                                 type="radio"
@@ -122,7 +122,7 @@ export const PRSection = () => {
                             {oneRepMax !== null && (
                                 <div className="mt-4 p-4 bg-green-100 border border-green-400 rounded-lg text-center max-w-xs mx-auto">
                                     {" "}
-                                    <span className="font-bold text-2xl">{oneRepMax.toFixed(1)}</span> {type}
+                                    <span className="font-bold text-3xl">{oneRepMax.toFixed(1)}</span> <span className="text-3xl font-bold">{type}</span>
 
                                 </div>
                             )}
