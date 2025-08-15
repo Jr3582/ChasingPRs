@@ -1,4 +1,4 @@
-import { Navbar } from "../components/NavBar"
+import { Navbar } from "../components/Navbar"
 import { TDEESection } from "../components/TDEESection"
 import { MainBackground } from "../components/MainBackground"
 
