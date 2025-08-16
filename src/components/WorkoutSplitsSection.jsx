@@ -27,7 +27,7 @@ export const WorkoutSplitsSection = () => {
 
                             <ul className="list-none list-outside pl-3 space-y-4 text-gray-800">
                                 <li className="text-2xl">Seated Lateral Raises: <br></br>3 sets, 8-12 reps ~ 150 lbs </li>
-                                <li className="text-2xl">Barbell Static Hold: <br></br>1 set, 1 minute hold </li>
+                                <li className="text-2xl">Barbell Static Hold: <br></br>2 sets, 1 minute hold </li>
                             </ul>
                             
                         </div>
@@ -72,7 +72,7 @@ export const WorkoutSplitsSection = () => {
 
                             <ul className="list-none list-outside pl-3 space-y-4 text-gray-800">
                                 <li className="text-2xl">Rear Delt Fly Machine: <br></br>2 sets, 15 reps ~ 90 lbs </li>
-                                <li className="text-2xl">Dead Hangs: <br></br>2 sets, 1 Minute Holds </li>
+                                <li className="text-2xl">Dead Hangs: <br></br>2 sets, 1 Minute hold </li>
                             </ul>
                             
                         </div>
