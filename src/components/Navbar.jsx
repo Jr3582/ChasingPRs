@@ -1,4 +1,4 @@
-import { BicepsFlexed, Calculator, Hamburger } from "lucide-react"
+import { BicepsFlexed, Calculator, Hamburger, NotebookPen } from "lucide-react"
 import { Link } from "react-router-dom"
 
 export const Navbar = () => {
@@ -27,6 +27,12 @@ export const Navbar = () => {
                 <Hamburger
                 className="inline-block w-6 h-6 align-middle mx-1"
                 strokeWidth={2.5} 
+                />
+                </Link>
+                <Link to="/splits" className="hover:text-accent font-bold transition-colors">
+                My Workout Splits
+                <NotebookPen className="inline-block w-6 h-6 align-middle mx-1"
+                strokeWidth={2.5}
                 />
                 </Link>
             </div>

@@ -32,7 +32,7 @@ export const PRSection = () => {
                             Careful Considerations!
                         </h3>
 
-                        <ul className="list-disc list-outside pl-3 space-y-2 text-gray-800">
+                        <ul className="list-disc list-outside pl-3 space-y-2 text-gray-800 text-left">
                             <li className="text-xl">These calculations are meant to help gauge your current strengths relative to your rep range maxes</li>
                             <li className="text-xl">Consider these calculations with a grain of salt, as actual results may vary based on individual factors</li>
                             <li className="text-xl">I am not responsible for any unforseen injuries or potential damages as a result of using this calculator</li>
